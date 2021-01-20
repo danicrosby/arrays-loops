@@ -91,4 +91,30 @@ const nameLoop = () => {
   console.log(domString)
 }
 
-nameLoop();
+nameLoop(); //TRINITY CHRISTIANA, AJA WASHINTON, THERESA VASQUEZ
+
+
+
+//ARRAY METHOD
+
+const array1 = ['cow', 'dog', 'cat'];
+
+const string1 = array1.join(', ') // don't forget the space at the end
+console.log(string1); //cow, dog, cat
+
+const string1ToArray = string1.split(','); //Methods are functions, split on the comma
+console.log(string1ToArray); //turns string back into array [cow, dog, cat]
+
+
+array1.pop();   // off the end
+console.log(array1); 
+array1.push('cat'); // onto the end
+console.log(array1);  // const can be mutable with arrays and objects
+
+
+
+//UNSHIFT AND SHIFT
+array1.unshift('cow');  // in the front
+console.log(array1);
+array1.shift('cat'); // in the back
+console.log(array1); 
