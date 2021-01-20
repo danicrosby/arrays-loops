@@ -33,3 +33,62 @@ console.log(findGreg(students)); //False
 //IF YOU JUST PASS ARRAY THEN YOU CAN CHANGE OUT ANY ARRAY IN THE FUNCTION
 
 
+
+//LOOPS: 
+
+const fucntionForTad = () => {
+  for (let i =0; i <= 15; i++)
+  console.log(i)
+}
+
+fucntionForTad();
+
+
+
+//ARRAYS WITH LOOPS
+
+const e14Instructors = ['Aja', 'Trinity', 'Dr. T', 'Tickets'];
+
+for (let i = 0; i < e14Instructors.length; i++) {
+  console.log(e14Instructors[i]) // itereates 1 each time first time is Aja, second time Trinity etc.
+}
+
+
+
+//ARRAYS, LOOPS, THAT HAVE FUNCTIONS INSIDE
+
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo'];
+
+const colorLoop = () => {
+  let domString = '';
+
+  for (let i = 0; i < colors.length; i++) {
+    domString += `<h1>${colors[i]}</h1>`
+  }
+  console.log(domString)
+}
+
+colorLoop();
+
+
+// LOOP THROUGH ARRAY OF OBJECTS
+
+const instructors = [
+  { first: 'Trinity', last: 'Christiana' },
+  { first: 'Aja', last: 'Washington' },  //all the same key values
+  { first: 'Tresa', last: 'Vasquez' },
+];
+
+
+// REFACTORED ARRAY OF OBJECTS
+
+const nameLoop = () => {
+  let domString = '';
+
+  for (let i = 0; i < instructors.length; i++) {
+    domString += `<h1>${instructors[i].first} ${instructors[i].last}</h1>`
+  }
+  console.log(domString)
+}
+
+nameLoop();
